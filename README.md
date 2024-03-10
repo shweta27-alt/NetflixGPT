@@ -1,7 +1,6 @@
 // Create react app
 // tailwind  config
 
-
 ### features
 - login/ signup
    - sign in/ sign up form
@@ -18,4 +17,3 @@
 -NetflixGPT
   - search bar
   - movie suggestions
-  
