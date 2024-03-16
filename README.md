@@ -1,5 +1,9 @@
-// Create react app
-// tailwind  config
+# netflix GPT
+- Create react app
+- tailwind  config
+- header
+- Login form
+- signup
 
 ### features
 - login/ signup
