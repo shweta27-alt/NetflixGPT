@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "netflixgpt-bd4ea",
+    "build": "netflixgpt-bd4ea"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -2,8 +2,10 @@
 - Create react app
 - tailwind  config
 - header
+- ruting for app
 - Login form
 - signup
+- form validation
 
 ### features
 - login/ signup
