@@ -1,6 +1,8 @@
 import React, { useState, useRef} from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/Validate";
+import {auth} from "../utils/firebase";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -15,24 +17,46 @@ const Login = () => {
 
   const handleClickButton = () =>{
     //validate the form data
-    // console.log(email.current.value)
-    // console.log(password.current.value)
-    // console.log(name.current.value)
     if(isSignIn){
-      handleSignIn()
+      handleSignIn();
+      signInWithEmailAndPassword(auth, email.current.value, password.current.value)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log(user)
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        setErrorMessage(errorCode+ "-" +errorMessage)
+      });
+
     }else{
       handleSignUp();
+      createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+      .then((userCredential) => {
+        // Signed up 
+        const user = userCredential.user;
+        console.log(user)
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        setErrorMessage(errorCode+ "-" +errorMessage)
+      });
     }  
   }
 
   const handleSignIn = () => {
     const message = checkValidData( email.current.value, password.current.value)
     setErrorMessage(message)
+    if(message) return;
   }
 
   const handleSignUp = () => {
     let message = checkValidData( name.current.value, email.current.value, password.current.value)
-    setErrorMessage(message)
+    setErrorMessage(message);
+    if(message) return;
   }
   
   return (

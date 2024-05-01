@@ -6,6 +6,10 @@
 - Login form
 - signup
 - form validation
+- useRef hook
+- firebase setup
+- deploying app
+- create signup in firebase
 
 ### features
 - login/ signup
@@ -23,3 +27,18 @@
 -NetflixGPT
   - search bar
   - movie suggestions
+
+
+
+Firebase deployment command:-
+
+ npm install firebase
+ npm install -g firebase-tools
+ firebase use --add
+
+ 1. firsbase login :- firebase login
+ 2. Initilize firebase :- firebase init
+ 3.deploy command :- firebase deploy
+
+
+ 2.51
