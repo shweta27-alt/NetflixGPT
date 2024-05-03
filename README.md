@@ -40,5 +40,8 @@ Firebase deployment command:-
  2. Initilize firebase :- firebase init
  3.deploy command :- firebase deploy
 
+for redux =:
+npm i -D @reduxjs/toolkit
+npm i react-redux
 
  2.51
