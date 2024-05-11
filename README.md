@@ -21,6 +21,14 @@
 - register tmdb
 - craete app and get acces key
 - get data from imdb
+- create hook for now playing movies
+- create movieslice
+- update store with movies data
+- Planning for main container and secondary container
+- Fetch data for trailer video
+- update store with trailer video data
+- emabeded youtube video make it autoplay and mute
+- tailwind css to make main container look awesome
 
 
 ### features
