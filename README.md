@@ -16,7 +16,11 @@
 - update profile
 - bugfix - signup user display name and profile picture update
 - bugfix - if user is not logged in redirect to /browse to login page and vice-versa
-- 
+- unSubscribed to onAuthstatechange callback
+- add hardcoded values to the constant file
+- register tmdb
+- craete app and get acces key
+- get data from imdb
 
 
 ### features
