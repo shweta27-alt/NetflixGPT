@@ -29,6 +29,7 @@
 - update store with trailer video data
 - emabeded youtube video make it autoplay and mute
 - tailwind css to make main container look awesome
+- built secondary component
 
 
 ### features
