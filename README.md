@@ -30,6 +30,11 @@
 - emabeded youtube video make it autoplay and mute
 - tailwind css to make main container look awesome
 - built secondary component
+- Build Movielist
+- build moviecard
+- TMDB Image CDN URL
+- Made the browse page amaziong with tailwind css
+- usePopularMovies customhook 
 
 
 ### features
