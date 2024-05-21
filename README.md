@@ -34,7 +34,8 @@
 - build moviecard
 - TMDB Image CDN URL
 - Made the browse page amaziong with tailwind css
-- usePopularMovies customhook 
+- usePopularMovies customhook
+- GPT search feature 
 
 
 ### features
