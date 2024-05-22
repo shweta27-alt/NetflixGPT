@@ -45,34 +45,43 @@ const Header = () => {
     });
 
     // unsubscribe when component is unmount
-    return() => unsubscribe();
+    return () => unsubscribe();
   }, []);
 
   const gptHandleClick = () => {
-     dispatch(toggleGptSearchView());
-  }
+    dispatch(toggleGptSearchView());
+  };
 
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img
-        className="w-44"
-        src={LOGO}
-        alt="Netflix Logo"
-      />
+      <img className="w-44" src={LOGO} alt="Netflix Logo" />
 
       {user && (
         <div className="flex p-2">
-          <button className="py-2 px-4 text-white bg-red-800 rounded-lg mx-4 my-2 font-semibold" onClick={gptHandleClick}>GPT Search</button>
-          <div className="flex flex-col">
-          <img
-            className="cursor-pointer pl-2"
-            alt="user-icon"
-            src={user?.photoURL}
-            style={{ height: "35px", width: "45px" }}
-          />
-          <button className="font-bold text-white" onClick={handleSignOut}>
-            Sign out
+          <select>
+            <option value="en">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="marathi">Marathi</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+          </select>
+          <button
+            className="py-2 px-4 text-white bg-red-800 rounded-lg mx-4 my-2 font-semibold"
+            onClick={gptHandleClick}
+          >
+            GPT Search
           </button>
+          <div className="flex flex-col">
+            <img
+              className="cursor-pointer pl-2"
+              alt="user-icon"
+              src={user?.photoURL}
+              style={{ height: "35px", width: "45px" }}
+            />
+            <button className="font-bold text-white" onClick={handleSignOut}>
+              Sign out
+            </button>
           </div>
         </div>
       )}
