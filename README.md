@@ -36,6 +36,9 @@
 - Made the browse page amaziong with tailwind css
 - usePopularMovies customhook
 - GPT search feature 
+- GPT search bar
+- (*)Multilanguage feature in app
+- Integrate GPT APIS (get open key)
 
 
 ### features
