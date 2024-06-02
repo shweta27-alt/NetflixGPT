@@ -39,6 +39,7 @@
 - GPT search bar
 - (*)Multilanguage feature in app
 - Integrate GPT APIS (get open key)
+1;56
 
 
 ### features
